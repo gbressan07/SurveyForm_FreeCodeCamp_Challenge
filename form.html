@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>FreeCodeCamp-Survey-Form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">The Survey Form Project by gbressan</h1>
+    <p id="description">
+      This is a form to figure it out which kind of pets people own and how it's
+      their's pets behavior
+    </p>
+    <div class="container">
+      <form id="survey-form" method="post">
+        <fieldset>
+          <label for="name" id="name-label"
+            >Enter Your Full Name
+            <input
+              required
+              id="name"
+              type="text"
+              placeholder="Enter your name"
+              name="name"
+            />
+          </label>
+          <label for="email" id="email-label"
+            >Enter Your Email
+            <input
+              required
+              id="email"
+              type="email"
+              placeholder="Enter your email"
+              name="email"
+            />
+          </label>
+          <label for="number" id="number-label"
+            >Enter Your Age
+            <input
+              required
+              id="number"
+              type="number"
+              min="1"
+              max="127"
+              placeholder="Age"
+              name="number"
+            />
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>Which option represents your pet better?</legend>
+          <label for="usual-pet"
+            ><input
+              id="usual-pet"
+              type="checkbox"
+              class="inline"
+              name="pet-type"
+              value="usual-pet"
+            />Usual Pet</label
+          >
+          <label for="farm-pet"
+            ><input
+              id="farm-pet"
+              type="checkbox"
+              class="inline"
+              name="pet-type"
+              value="farm-pet"
+            />Farm Pet</label
+          >
+          <label for="exotic-pet"
+            ><input
+              id="exotic-pet"
+              type="checkbox"
+              class="inline"
+              name="pet-type"
+              value="exotic-pet"
+            />Exotic Pet</label
+          >
+        </fieldset>
+        <fieldset>
+          <legend>Select your pet gender:</legend>
+          <label for="male"
+            ><input
+              value="male"
+              id="male"
+              type="radio"
+              class="inline"
+              name="pet-sex"
+            />Male
+          </label>
+          <label for="female"
+            ><input
+              value="female"
+              id="female"
+              type="radio"
+              class="inline"
+              name="pet-sex"
+            />Female
+          </label>
+          <label for="hermaphrodite"
+            ><input
+              value="hermaphrodite"
+              id="hermaphrodite"
+              type="radio"
+              class="inline"
+              name="pet-sex"
+            />Hermaphrodite (like clownfish)</label
+          >
+        </fieldset>
+        <fieldset>
+          <legend>Select his color</legend>
+          <select id="dropdown">
+            <option>White</option>
+            <option>Brown</option>
+            <option>Black</option>
+            <option>Yellow</option>
+            <option>Orange</option>
+            <option>More than one color</option>
+            <option>More than two colors</option>
+          </select>
+        </fieldset>
+        <label for="description-textarea"
+          >Feel free to tell us about your pet
+          <textarea
+            id="description-textarea"
+            rows="4"
+            cols="50"
+            placeholder="He/She is one of the best buddy i could ever have because..."
+          >
+          </textarea>
+        </label>
+        <input type="submit" value="Submit" id="submit" />
+      </form>
+    </div>
+  </body>
+</html>
